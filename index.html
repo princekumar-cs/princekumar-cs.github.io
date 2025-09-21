@@ -3,67 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo Ads Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-    }
-    .content {
-      margin: 20px 0;
-    }
-    .ad-container {
-      margin: 20px 0;
-      text-align: center;
-      border: 1px dashed #888;
-      padding: 10px;
-    }
-  </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7590986172035515"
-     crossorigin="anonymous"></script>
+  <title>Prince Kumar| Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
 <body>
-  <h1>Welcome to Demo Ads Page</h1>
-  
-  <div class="content">
-    <p>This is a simple page to test ads on GitHub Pages. You can place your ad code below.</p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Prince<span>Kumar</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Prince Rathor</span></h1>
+      <h2><span class="typing"></span></h2>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">🚀 View Projects</a>
+        <a href="#contact" class="btn btn-outline">📩 Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stat">
+      <h3 id="projects-count">0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+      <h3 id="experience-count">0</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat">
+      <h3 id="clients-count">0</h3>
+      <p>Happy Clients</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+      <p>
+        I am a passionate <b>Web Developer, Ethical Hacker, and Software Engineer</b>.  
+        With strong expertise in creating secure web apps, advanced storage systems, 
+        and automation tools, I help businesses grow with technology.
+      </p>
+      <!-- Education Card Example -->
+<div class="card">
+  <h3>B.Tech Computer Science</h3>
+  <p><strong>University:</strong>Dr. A. P. J. Abdul Kalam Technical University, Lucknow</p>
+  <p><strong>Year:</strong> 2024 - 2028</p>
+  <p><strong>Grade:</strong> 7.5 CGPA [In 1st Sem]</p>
+</div>
+<div class="card">
+  <h3>XII<sup>th</sup></h3>
+  <p><strong>Board:</strong>Central Board Of Secondary Education [CBSE]</p>
+  <p><strong>Year:</strong>2024</p>
+  <p><strong>School:</strong>Colonel's Brightland Public School,Agra</p>
+  <p><strong>With strong Command in Maths and Computer</strong></p>
+</div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="devicon-c-plain "><strong> Language</strong></i></div>
+      <div class="skill"><i class="devicon-cplusplus-plain colored"><strong> C++</strong></i></div>
+      <div class="skill"><i class="devicon-python-plain"><strong> Python</strong></i></div>
+      <div class="skill"><i class="devicon-java-plain "><strong> Java Script</strong></i></div>
+      <div class="skill"><i class="devicon-html5-plain "><strong> Html</strong></i></div>
+      <div class="skill"><i class="devicon-css3-plain "><strong> CSS</strong></i></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card glass">
+        <h3><i class="fa-solid fa-calculator"></i> Modern Calculator</h3>
+        <p>Sleek, responsive calculator built with HTML, CSS, and JavaScript.</p>
+        <a href="https://princekumar-cs.github.io/myprojects/index.html">View Project →</a>
+      </div>
+      <div class="project-card glass">
+        <h3><i class="fa-solid fa-qrcode"></i>QrCode Generator</h3>
+        <p> modern tool to generate customizable QR codes quickly. Users can create, download, and share codes easily. Fully responsive and user-friendly.</p>
+        <a href="https://princekumar-cs.github.io/myprojects/QR/index.html">View Project →</a>
+      </div>
+      <div class="project-card glass">
+        <h3>🤖 AI Chatbot</h3>
+        <p>Chatbot with GPT memory, voice input, and MySQL logging.</p>
+        <a href="#">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section achievements">
+    <h2>Achievements</h2>
+    <div class="achievements-grid">
+      <div class="achieve">🏆 Built 5+ Web Applications</div>
+      <div class="achieve">💼 Freelance Experience</div>
+      <div class="achieve">🔒 Cybersecurity Projects</div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+   <div class="con">
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form method="post" action="https://formspree.io/f/xjkabvyz">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="socials">
+  <a href="https://github.com/princekumar-cs" target="_blank">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/princekumarcsit" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://x.com/princekumar_cs" target="_blank">
+    <i class="fa-brands fa-x-twitter"></i> Connect on X
+  </a>
+  <a href="mailto:princekumar-csit@gmail.com"><i class="fa-solid fa-envelope"></i>Mail Us</a>
+</div>
+
+  </section>
   </div>
 
-  <!-- Ad Section -->
-  <div class="ad-container">
-    <!-- Example Google AdSense Code -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"  <!-- Replace with your AdSense client ID -->
-         data-ad-slot="1234567890"                  <!-- Replace with your ad slot ID -->
-         data-ad-format="auto"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Prince Rathor | Built with ❤️</p>
+  </footer>
 
-  <div class="content">
-    <p>More content here. Scroll down to see more ad placements if needed.</p>
-  </div>
-
-  <div class="ad-container">
-    <!-- Another ad placement if you want multiple ads -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-         data-ad-slot="9876543210"
-         data-ad-format="auto"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
