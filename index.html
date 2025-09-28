@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Kumar| Portfolio</title>
+  <title>Prince Kumar | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7590986172035515"
      crossorigin="anonymous"></script>
- </head>
+</head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
@@ -63,22 +63,58 @@
         With strong expertise in creating secure web apps, advanced storage systems, 
         and automation tools, I help businesses grow with technology.
       </p>
-      <!-- Education Card Example -->
-<div class="card">
-  <h3>B.Tech Computer Science</h3>
-  <p><strong>University:</strong>Dr. A. P. J. Abdul Kalam Technical University, Lucknow</p>
-  <p><strong>Year:</strong> 2024 - 2028</p>
-  <p><strong>Grade:</strong> 7.5 CGPA [In 1st Sem]</p>
-</div>
-<div class="card">
-  <h3>XII<sup>th</sup></h3>
-  <p><strong>Board:</strong>Central Board Of Secondary Education [CBSE]</p>
-  <p><strong>Year:</strong>2024</p>
-  <p><strong>School:</strong>Colonel's Brightland Public School,Agra</p>
-  <p><strong>With strong Command in Maths and Computer</strong></p>
-</div>
+      
+      <!-- Education Cards -->
+      <div class="card" id="btechCard">
+        <h3>B.Tech Computer Science</h3>
+        <p><strong>University:</strong> Dr. A. P. J. Abdul Kalam Technical University, Lucknow</p>
+        <p><strong>Year:</strong> 2024 - 2028</p>
+        <p><strong>Grade:</strong> 7.5 CGPA [In 1st Sem]</p>
+      </div>
+
+      <div class="card" id="xiiCard">
+        <h3>XII<sup>th</sup></h3>
+        <p><strong>Board:</strong> Central Board Of Secondary Education [CBSE]</p>
+        <p><strong>Year:</strong> 2024</p>
+        <p><strong>School:</strong> Colonel's Brightland Public School, Agra</p>
+        <p><strong>With strong Command in Maths and Computer</strong></p>
+      </div>
     </div>
   </section>
+
+  <!-- Modal for B.Tech -->
+  <div class="modal" id="gradeModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>B.Tech Year-wise Grades</h3>
+      <div class="grades-container">
+        <div class="grade-box">
+          <h4>Semester 1</h4>
+          <p>CGPA: 7.5</p>
+          <p>Highlights: Strong in Programming & Physics</p>
+        </div>
+        <div class="grade-box">
+          <h4>Semester 2</h4>
+          <p>CGPA: 7.8</p>
+          <p>Highlights: Improved in Data Structures</p>
+        </div>
+        <div class="grade-box">
+          <h4>Semester 3</h4>
+          <p>CGPA: 8.1</p>
+          <p>Highlights: Excellent in DBMS & OOPs</p>
+        </div>
+        <div class="grade-box">
+          <h4>Semester 4</h4>
+          <p>CGPA: 8.3</p>
+          <p>Highlights: Cybersecurity Project</p>
+        </div>
+        <div class="grade-box">
+          <h4>Semester 5</h4>
+          <p>Upcoming...</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Skills Section -->
   <section id="skills" class="section">
@@ -103,8 +139,8 @@
         <a href="https://princekumar-cs.github.io/myprojects/index.html">View Project →</a>
       </div>
       <div class="project-card glass">
-        <h3><i class="fa-solid fa-qrcode"></i>QrCode Generator</h3>
-        <p> modern tool to generate customizable QR codes quickly. Users can create, download, and share codes easily. Fully responsive and user-friendly.</p>
+        <h3><i class="fa-solid fa-qrcode"></i> QrCode Generator</h3>
+        <p>Modern tool to generate customizable QR codes quickly. Users can create, download, and share codes easily. Fully responsive and user-friendly.</p>
         <a href="https://princekumar-cs.github.io/myprojects/QR/index.html">View Project →</a>
       </div>
       <div class="project-card glass">
@@ -125,36 +161,34 @@
     </div>
   </section>
 
-
-
   <!-- Contact Section -->
-   <div class="con">
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <form method="post" action="https://formspree.io/f/xjkabvyz">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <div class="con">
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form method="post" action="https://formspree.io/f/xjkabvyz">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<div class="socials">
-  <a href="https://github.com/princekumar-cs" target="_blank">
-    <i class="fab fa-github"></i> GitHub
-  </a>
-  <a href="https://www.linkedin.com/in/princekumarcsit" target="_blank">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
-  <a href="https://x.com/princekumar_cs" target="_blank">
-    <i class="fa-brands fa-x-twitter"></i> Connect on X
-  </a>
-  <a href="mailto:princekumar-csit@gmail.com"><i class="fa-solid fa-envelope"></i>Mail Us</a>
-</div>
-
-  </section>
+      <div class="socials">
+        <a href="https://github.com/princekumar-cs" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/princekumarcsit" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://x.com/princekumar_cs" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i> Connect on X
+        </a>
+        <a href="mailto:princekumar-csit@gmail.com"><i class="fa-solid fa-envelope"></i> Mail Us</a>
+      </div>
+    </section>
   </div>
-<!-- Footer -->
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Prince Rathor | Built with ❤️</p>
   </footer>
@@ -162,9 +196,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
