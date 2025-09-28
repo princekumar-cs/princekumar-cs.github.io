@@ -68,4 +68,3 @@ modal.addEventListener("click", (e) => {
 });
 
 
-
