@@ -184,6 +184,7 @@ footer { background: #0a2540; color: white; padding: 20px; text-align: center; }
   color: #475569;
   font-size: 0.95rem;
 }
+/* Modal Style */
 .modal {
   display: none; 
   position: fixed; 
@@ -237,4 +238,3 @@ footer { background: #0a2540; color: white; padding: 20px; text-align: center; }
   margin: 0 0 6px;
   color: #333;
 }
-
