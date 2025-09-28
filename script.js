@@ -45,3 +45,27 @@ themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   themeBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
+// Education Card Popup
+const eduCard = document.querySelector(".card"); // First card (B.Tech)
+const modal = document.getElementById("gradeModal");
+const closeBtn = document.getElementById("closeModal");
+
+// Open modal
+eduCard.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+// Close modal
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Close only if clicked on background overlay
+modal.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal")) {
+    modal.style.display = "none";
+  }
+});
+
+
+
