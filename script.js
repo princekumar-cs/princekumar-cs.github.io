@@ -46,7 +46,7 @@ themeBtn.addEventListener("click", () => {
   themeBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 // Education Card Popup
-const eduCard = document.querySelector("btechcard"); // First card (B.Tech)
+const eduCard = document.getElementById("btechcard"); // First card (B.Tech)
 const modal = document.getElementById("gradeModal");
 const closeBtn = document.getElementById("closeModal");
 
@@ -66,6 +66,7 @@ modal.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+
 
 
 
